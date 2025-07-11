@@ -22,7 +22,7 @@ setInterval(() => {
         text2.classList.add("scroll_up");
         text2.classList.remove("scroll_down");
         check = false;
-        console.log(`if statement: ${check}`)
+        // console.log(`if statement: ${check}`)
     }
     else{
         text1.classList.add("scroll_up");
@@ -30,7 +30,7 @@ setInterval(() => {
         text2.classList.add("scroll_down");
         text2.classList.remove("scroll_up");
         check = true;
-        console.log(`else statement: ${check}`)
+        // console.log(`else statement: ${check}`)
     }
 
 }, 3500);
@@ -55,5 +55,31 @@ locationIcon.addEventListener("mouseout",()=>{
     carGif.classList.add("hide");
 })
 
+//image carousel
 
+let imageCarouselSection = document.querySelector(".image_carousel_sect");
+
+// Store your image paths in an array
+const images = [
+  "./images/carouselImages/bread.png",
+  "./images/carouselImages/coffee.png",
+  "./images/carouselImages/babyItems.png"
+  // Add more images here easily!
+];
+
+let count = 0;
+
+setInterval(() => {
+ 
+  const currentImageIndex = count % images.length;
+console.log(currentImageIndex)
+  imageCarouselSection.style.backgroundImage = `url('${images[currentImageIndex]}')`;
+
+  count++; 
+  if (count === images.length) {
+    count = 0;
+  }
+
+  // console.log(count);
+}, 2300);
 
