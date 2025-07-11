@@ -2,12 +2,41 @@
 //   .then(response => response.json())
 //   .then(data => console.log(data))
   
-
+// user and locatin icon animations
 let loginDiv = document.querySelector(".log_in_div");
 let userSvg = document.querySelector(".svg");
 let userGif = document.querySelector(".gif");
 let carGif = document.querySelector(".minicar_gif");
 let locationIcon = document.querySelector(".fa-location-dot");
+
+// carousel components
+let text1 = document.querySelector(".text1");
+let text2 = document.querySelector(".text2");
+let check = true;
+
+// scroll carousel animation
+setInterval(() => {
+    if(check){
+        text1.classList.add("scroll_down");
+        text1.classList.remove("scroll_up");
+        text2.classList.add("scroll_up");
+        text2.classList.remove("scroll_down");
+        check = false;
+        console.log(`if statement: ${check}`)
+    }
+    else{
+        text1.classList.add("scroll_up");
+        text1.classList.remove("scroll_down");
+        text2.classList.add("scroll_down");
+        text2.classList.remove("scroll_up");
+        check = true;
+        console.log(`else statement: ${check}`)
+    }
+
+}, 3500);
+
+
+// icon animatoins
 loginDiv.addEventListener("mouseenter",()=>{
    userSvg.classList.add("hide");  
    userGif.classList.remove("hide");
@@ -25,4 +54,6 @@ locationIcon.addEventListener("mouseover",()=>{
 locationIcon.addEventListener("mouseout",()=>{
     carGif.classList.add("hide");
 })
+
+
 
