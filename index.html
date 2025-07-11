@@ -7,12 +7,26 @@
     <link rel="stylesheet" href="css/reset.css">
 
     <!-- font links -->
+
+    <!-- Lato -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
 
+    <!-- bitcount -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap"
+        rel="stylesheet">
 
+    <!-- delius -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <!-- icon links -->
+    <script src="https://kit.fontawesome.com/7d5224a84d.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/groceries-store.svg" type="image/x-icon">
@@ -20,6 +34,81 @@
 </head>
 
 <body>
+    <main class="main_container">
+
+        <!-- header -->
+        <header class="page_header">
+
+            <!-- header container -->
+            <section class="header_section_top">
+                <nav class="info_nav">
+                    <p class="about_us font1">About Us</p>
+                    <p class="contact_us font1">Customer Support</p>
+                </nav>
+
+
+                <!-- carousel div -->
+                <div class="carousl_text_div">
+
+                    <!-- text1 -->
+                    <p class="carousel_text text1 font2">
+                        Get 20% off your first order.
+                        <a href="#" class="link">Subscribe</a>
+                    </p>
+
+                    <!-- text2 -->
+                    <p class="carousel_text text2 hide">
+                        Get 20% off your first order. Subscribe</p>
+
+                </div>
+
+                <!-- login Div -->
+                <div class="log_in_div">
+                    <img src="images/userSvg.svg" alt="gif" class="avatar_gif svg">
+                    <img src="images/userGif.gif" alt="logo gif" class="hide avatar_gif gif">
+                    <p class="log_in font1">Log In</p>
+
+                </div>
+            </section>
+
+            <section class="header_section_bottom">
+                <a href="index.html" class="main_page_link">
+                    <h1 class="main_page_logo font3">Mega<span class="market font3">market.</span>
+                    </h1>
+                </a>
+
+
+                <!-- search div -->
+                <div class="search_div">
+                    <label for="search" class="icon_label">
+                        <i class="fa-solid fa-magnifying-glass" style="color:#FFFFFF"></i>
+                    </label>
+
+                    <input type="text" placeholder="Search" class="font3" id="search" autocomplete="off">
+                </div>
+
+                <!-- icons div -->
+                <div class="icons_div">
+                    <img src="images/minicar.gif" alt="minicar gif" class="minicar_gif hide ">
+                    <a href="#">
+                        <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                    </a>
+
+
+                    <div class="cart_div">
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        <p class="cart_products font3">0</p>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+
+        </header>
+    </main>
+
 
 
     <script src="script.js"></script>
